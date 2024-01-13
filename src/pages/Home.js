@@ -11,6 +11,7 @@ import {
 	serverTimestamp,
 } from "firebase/firestore";
 import { useCollection } from "react-firebase-hooks/firestore";
+
 const Home = () => {
 	const [input, setInput] = useState("");
 	const [user] = useAuthState(auth);
@@ -41,9 +42,9 @@ const Home = () => {
 
 	return (
 		<>
-			<div className="max-w-4xl p-2 mx-auto mt-1">
+			<div className="max-w-4xl p-2 mx-auto">
 				<Header />
-				<div className="">
+				<div>
 					{messages?.docs?.map((message) => (
 						<Message
 							key={message?.id}
@@ -54,18 +55,18 @@ const Home = () => {
 					))}
 				</div>
 				<div ref={lastMessageDiv} className="mb-20" />
-				<form className="fixed bottom-5 items-center space-x-2">
+				<form className="fixed bottom-2 pt-2 pr-20 items-center space-x-2 w-[100%]">
 					<input
 						value={input}
 						onChange={(e) => setInput(e.target.value)}
-						className="flex-1 outline-1 bg-slate-200 p-2 rounded-lg font-medium text-blue-900"
+						className="flex-1 outline-1 bg-slate-200 p-2 rounded-lg font-medium text-blue-900 px-4 w-[30rem]"
 						type="text"
-						placeholder="Type something witty here... or don't, I'm not your boss."
+						placeholder="Type somethin witty here...or don't, I ain't your boss."
 					/>
 					<button
 						disabled={!input}
 						onClick={sendMessage}
-						className="bg-green-300 text-sm text-gray-600 p-3 rounded-xl hover:scale-75 transition-all duration-100 ease-in-out disabled:bg-slate-300 disabled:cursor-not-allowed"
+						className="bg-green-300 text-sm text-gray-600 p-3 rounded-xl hover:scale-75 transition-all duration-100 ease-in-out disabled:bg-slate-300 disabled:cursor-not-allowed px-6"
 					>
 						Send
 					</button>

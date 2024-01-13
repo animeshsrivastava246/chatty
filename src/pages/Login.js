@@ -10,7 +10,7 @@ const Login = () => {
 	};
 	return (
 		<div className="text-center mt-72">
-			<h1 className="text-5xl font-bold">Chatty 007</h1>
+			<h1 className="text-5xl font-bold font-serif text-white">Chatty 007</h1>
 			<button onClick={signInUser} className="bg-blue-400 text-med font-bold text-white rounded-lg hover:scale-110 transition-all duration-100 ease-in-out p-2 mt-5">
 				Sign in with Google
 			</button>

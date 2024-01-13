@@ -7,7 +7,7 @@ function App() {
 	const [user] = useAuthState(auth);
 	return (
 		<>
-			<div className="bg-gray-500">{!user ? <Login /> : <Home />}</div>
+			{!user ? <Login /> : <Home />}
 		</>
 	);
 }
