@@ -42,7 +42,7 @@ const Home = () => {
 
 	return (
 		<>
-			<div className="max-w-4xl p-2 mx-auto">
+			<div className="max-w-3xl p-4 mx-auto">
 				<Header />
 				<div>
 					{messages?.docs?.map((message) => (
