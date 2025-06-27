@@ -17,7 +17,7 @@ const Header = () => {
 				<img
 					className="h-12 w-12 rounded-full"
 					src={user?.photoURL}
-					alt="IMG"
+					alt={user?.displayName || "User"}
 				/>
 				{user.displayName}
 			</div>
