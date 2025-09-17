@@ -1,24 +1,72 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
-
-# testing
-/coverage
-
-# production
-/build
-
-# misc
-.DS_Store
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
+# Node modules and package manager files
+node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Build directories
+dist/
+dist-ssr/
+build/
+coverage/
+
+# Environment files (e.g., API keys, DB credentials)
+.env
+.env.*
+.env.local
+.env.*.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor directories and files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.sublime-project
+*.sublime-workspace
+
+# TypeScript and JavaScript build artifacts
+*.tsbuildinfo
+*.js.map
+*.d.ts
+
+# Test and coverage reports
+test-coverage/
+*.lcov
+.nyc_output/
+
+# Logs
+*.log
+
+# Temporary files
+*.bak
+*.tmp
+*.swp
+*~
+.idea/
+
+# Package manager lock files for specific environments (optional)
+yarn.lock
+package-lock.json
+
+# Dependency caches (if you have specific cache directories)
+.pnp/
+.cache/
+
+# Additional files for specific tools and services
+*.tgz
+*.zip
+*.tar
+*.tar.gz
+
+# Dependency directories (for monorepos like Lerna)
+node_modules/
+packages/*/node_modules/

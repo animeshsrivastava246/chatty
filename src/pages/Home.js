@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import Header from "../components/Header";
 import { Message } from "../components/Message";
 import { auth, db } from "../firebase";
